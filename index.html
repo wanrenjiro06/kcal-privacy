@@ -5,32 +5,212 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — Kcal</title>
 <style>
-  body { font-family: -apple-system, system-ui, sans-serif; padding: 24px; color: #1e293b; line-height: 1.6; max-width: 680px; margin: 0 auto; }
-  h1 { font-size: 22px; color: #22c55e; }
-  h2 { font-size: 16px; margin-top: 24px; }
-  p { font-size: 14px; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  .hero {
+    background: linear-gradient(135deg, #16a34a 0%, #22c55e 60%, #4ade80 100%);
+    padding: 56px 24px 48px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .logo-icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+  }
+
+  .logo-name {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  .hero h1 {
+    font-size: clamp(22px, 5vw, 32px);
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .hero p {
+    font-size: 15px;
+    opacity: 0.85;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 64px;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #dcfce7;
+    color: #15803d;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 32px;
+    border: 1px solid #bbf7d0;
+  }
+
+  .badge::before { content: "✓"; font-weight: 700; }
+
+  .section {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .section-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .icon-green  { background: #dcfce7; }
+  .icon-blue   { background: #dbeafe; }
+  .icon-red    { background: #fee2e2; }
+  .icon-purple { background: #ede9fe; }
+  .icon-orange { background: #ffedd5; }
+  .icon-gray   { background: #f1f5f9; }
+
+  .section-body h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 6px;
+  }
+
+  .section-body p {
+    font-size: 14px;
+    color: #475569;
+    line-height: 1.65;
+  }
+
+  .section-body a {
+    color: #16a34a;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .section-body a:hover { text-decoration: underline; }
+
+  .footer {
+    text-align: center;
+    font-size: 13px;
+    color: #94a3b8;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .footer strong { color: #64748b; }
 </style>
 </head>
 <body>
-<h1>Kcal — Privacy Policy</h1>
-<p>Last updated: June 5, 2026</p>
 
-<h2>Data Collection</h2>
-<p>This app collects no personal data. All information you enter — including food logs, calorie targets, weight, height, and preferences — is stored exclusively on your device using local SQLite storage. No data is ever transmitted to any server, third party, or external service.</p>
+<div class="hero">
+  <div class="logo">
+    <div class="logo-icon">🥗</div>
+    <span class="logo-name">Kcal</span>
+  </div>
+  <h1>Privacy Policy</h1>
+  <p>by RidgeField Apps &nbsp;·&nbsp; Last updated: June 5, 2026</p>
+</div>
 
-<h2>Accounts</h2>
-<p>This app requires no account, email address, or login of any kind.</p>
+<div class="container">
 
-<h2>Data Deletion</h2>
-<p>You can delete all locally stored data at any time via Settings → Data &amp; Privacy → Clear All Local Data. This action is irreversible and immediately removes all data from your device.</p>
+  <div class="badge">Your data never leaves your device</div>
 
-<h2>Analytics</h2>
-<p>This app contains no analytics SDK, crash reporting service, or behavioral tracking of any kind.</p>
+  <div class="section">
+    <div class="section-icon icon-green">🔒</div>
+    <div class="section-body">
+      <h2>No Data Collection</h2>
+      <p>Kcal collects zero personal data. Everything you enter — food logs, calorie targets, weight, height, and preferences — is stored exclusively on your device using local SQLite storage. Nothing is ever transmitted to any server, third party, or external service.</p>
+    </div>
+  </div>
 
-<h2>Permissions</h2>
-<p>The app may request camera access for barcode scanning and notification permission for optional meal reminders. These permissions are requested only when you initiate those features and are never used for data collection.</p>
+  <div class="section">
+    <div class="section-icon icon-blue">👤</div>
+    <div class="section-body">
+      <h2>No Account Required</h2>
+      <p>Kcal requires no account, email address, sign-in, or registration of any kind. You can use the full app without identifying yourself.</p>
+    </div>
+  </div>
 
-<h2>Contact</h2>
-<p>For support or questions: ridgefieldapps@gmail.com</p>
+  <div class="section">
+    <div class="section-icon icon-red">🗑️</div>
+    <div class="section-body">
+      <h2>Data Deletion</h2>
+      <p>You can permanently delete all locally stored data at any time via <strong>Settings → Data &amp; Privacy → Clear All Local Data</strong>. This action is immediate and irreversible.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-icon icon-purple">📊</div>
+    <div class="section-body">
+      <h2>No Analytics or Tracking</h2>
+      <p>Kcal contains no analytics SDK, crash reporting service, ad network, or behavioral tracking of any kind. We do not know how you use the app.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-icon icon-orange">📷</div>
+    <div class="section-body">
+      <h2>Permissions</h2>
+      <p>The app may request <strong>camera access</strong> for barcode scanning and <strong>notification permission</strong> for optional meal reminders. These are requested only when you use those features and are never used for data collection or advertising.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-icon icon-gray">✉️</div>
+    <div class="section-body">
+      <h2>Contact</h2>
+      <p>Questions or concerns? Reach us at <a href="mailto:ridgefieldapps@gmail.com">ridgefieldapps@gmail.com</a></p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <strong>RidgeField Apps</strong> · Kcal - Calorie &amp; Macro Tracker<br>
+    This policy applies to the Android version of Kcal.
+  </div>
+
+</div>
 </body>
 </html>
